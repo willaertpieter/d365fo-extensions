@@ -1,0 +1,47 @@
+{
+  "name": "Inventory Hover",
+  "tagline": "Hold Alt over any item number to see stock per warehouse and the product details you choose, without leaving the page.",
+  "status": "stable",
+  "order": 1,
+  "highlights": [
+    "Read-only",
+    "Stock per warehouse",
+    "Your own product fields"
+  ],
+  "store": {
+    "edge": "https://microsoftedge.microsoft.com/addons/detail/d365fo-inventory-hover/kifigmgmdbkjkgogicoglafmceofdahe"
+  },
+  "videos": [
+    {
+      "url": "https://youtu.be/SyV7vMDebmg",
+      "title": "The 5-minute tour"
+    },
+    {
+      "url": "https://youtube.com/shorts/TPymvTq6hjU",
+      "title": "The short version"
+    }
+  ],
+  "screenshots": [
+    {
+      "file": "shot-1-hover.png",
+      "caption": "The tooltip on a sales order line: product details and stock per warehouse."
+    },
+    {
+      "file": "shot-2-dimensions.png",
+      "caption": "Dimension columns appear only when the item uses them."
+    },
+    {
+      "file": "shot-3-settings.png",
+      "caption": "Pick, reorder and relabel the product fields, including your own extension fields."
+    },
+    {
+      "file": "shot-4-popup.png",
+      "caption": "The toolbar popup, with the log of every request the extension made."
+    }
+  ],
+  "permissions": {
+    "storage": "Your settings, the query log, counters, field lists and sites you enabled yourself.",
+    "scripting": "Only for Enable on this site, to run the extension on an address you approve.",
+    "activeTab": "Lets the popup see the current tab's address while it is open, to offer Enable on this site."
+  }
+}

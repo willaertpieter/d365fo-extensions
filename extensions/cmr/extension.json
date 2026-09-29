@@ -1,0 +1,19 @@
+{
+  "name": "CMR consignment note",
+  "tagline": "Turn an outbound load into a printable IRU-model CMR consignment note, in up to four languages at once.",
+  "status": "beta",
+  "order": 2,
+  "highlights": ["Never writes to D365", "Sales and transfer orders", "PDF and CMR register"],
+  "screenshots": [
+    { "file": "screenshot-1.png", "caption": "The Create CMR button in the D365 action pane." },
+    { "file": "screenshot-2.png", "caption": "The CMR, filled from D365 and ready to print." },
+    { "file": "screenshot-3.png", "caption": "One CMR with German as the first language." },
+    { "file": "screenshot-4.png", "caption": "Languages, date and number formats." },
+    { "file": "screenshot-5.png", "caption": "Sender profiles for box 1." }
+  ],
+  "permissions": {
+    "storage": "Your settings, sender and carrier profiles, drafts and the CMR register.",
+    "scripting": "Connects to D365 tabs that were already open, and runs on extra D365 sites you allow yourself.",
+    "downloads": "Optional, asked only when you turn on saving a PDF of each printed CMR."
+  }
+}
