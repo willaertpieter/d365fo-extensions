@@ -3,10 +3,15 @@
   "tagline": "A read-only X-ray of a sales or purchase order: every stage at a glance, and why it is stuck.",
   "status": "beta",
   "order": 3,
-  "highlights": ["Read-only", "Sales and purchase orders", "“Why stuck?” checks"],
+  "highlights": [
+    "Read-only",
+    "Sales and purchase orders",
+    "“Why stuck?” checks",
+    "Charges"
+  ],
   "permissions": {
     "sidePanel": "Shows Order X-ray in the browser's side panel, next to D365.",
-    "storage": "Your settings only: the thresholds per order type and the Follow D365 switch.",
+    "storage": "Your settings only: the thresholds per order type, the Follow D365 switch, and per D365 environment the table ids that charges need. No order data.",
     "contextMenus": "One Open in Order X-ray item in the browser's right-click menu."
   }
 }

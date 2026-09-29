@@ -9,7 +9,7 @@ Order X-ray shows the full lifecycle of a sales or purchase order in one side pa
 - Every line, with a drilldown.
 - The documents, with their payment status.
 - The customer card.
-- 16 "why stuck?" checks.
+- 17 "why stuck?" checks.
 
 **Purchase orders**
 
@@ -19,13 +19,19 @@ Order X-ray shows the full lifecycle of a sales or purchase order in one side pa
 - The vendor card.
 - 9 "why stuck?" checks.
 
+**Charges** (sales and purchase orders)
+
+- Header and line charges, on the order and on its posted invoices, with the totals per currency.
+- A badge per line with charges, and the charges in the line details.
+- A check for charges on a fully invoiced sales order that are on none of its invoices.
+
 ## Using it
 
 1. Open D365 and click the Order X-ray icon in the toolbar, or press **Alt+Shift+O**. The side panel opens, with the company taken from the page address.
 2. Open or select a sales or purchase order in D365: the panel follows it. Use the switch above the search box to change between sales and purchase orders.
 3. You can also type an order number and press Enter, or click an order number anywhere in D365 and press **Alt+Shift+L**.
 
-The thresholds for the checks can be set per order type under settings (⚙). IDs are copied with a click. You can change the keyboard shortcuts at `edge://extensions/shortcuts`.
+The thresholds for the checks can be set per order type under settings (⚙). Charges need a few D365 table ids, which the panel finds and remembers per environment; if D365 doesn't allow that, enter them under settings. IDs are copied with a click. You can change the keyboard shortcuts at `edge://extensions/shortcuts`.
 
 The first query after D365 has been idle can take 20 to 30 seconds while D365 warms up. The panel starts this warm-up as soon as it opens.
 
