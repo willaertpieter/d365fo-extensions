@@ -24,6 +24,7 @@ Order X-ray shows the full lifecycle of a sales or purchase order in one side pa
 - Header and line charges, on the order and on its posted invoices, with the totals per currency.
 - A badge per line with charges, and the charges in the line details.
 - A check for charges on a fully invoiced sales order that are on none of its invoices.
+- An estimate for percentage and per-unit charges that D365 only calculates at invoicing.
 
 ## Using it
 
@@ -31,7 +32,7 @@ Order X-ray shows the full lifecycle of a sales or purchase order in one side pa
 2. Open or select a sales or purchase order in D365: the panel follows it. Use the switch above the search box to change between sales and purchase orders.
 3. You can also type an order number and press Enter, or click an order number anywhere in D365 and press **Alt+Shift+L**.
 
-The thresholds for the checks can be set per order type under settings (⚙). Charges need a few D365 table ids, which the panel finds and remembers per environment; if D365 doesn't allow that, enter them under settings. IDs are copied with a click. You can change the keyboard shortcuts at `edge://extensions/shortcuts`.
+The thresholds for the checks can be set per order type under settings (⚙). Charges need a few D365 table ids, which the panel finds and remembers per environment; if D365 doesn't allow that, enter them under settings. IDs are copied with a click, and **Copy summary** on the order header copies a short text summary of the order for an e-mail or chat. You can change the keyboard shortcuts at `edge://extensions/shortcuts`.
 
 The first query after D365 has been idle can take 20 to 30 seconds while D365 warms up. The panel starts this warm-up as soon as it opens.
 

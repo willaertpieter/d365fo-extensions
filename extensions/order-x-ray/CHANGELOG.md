@@ -1,3 +1,10 @@
+### 0.6.1
+
+No new permissions.
+
+- **Estimated charges.** A percentage or per-unit charge that D365 only calculates at invoicing now shows what it will likely be, for example "≈ -$157.34 estimate". It's based on the charge's own percentage and the order's current lines, and hovering it shows how it was worked out. Estimates are never mixed with real amounts.
+- **Copy summary.** A button on the order header copies a short text summary of the order, ready to paste into an e-mail or chat. It includes the status, where the order stands, the "why stuck?" issues with next steps, charges and invoices.
+
 ### 0.6.0
 
 Charges, for sales and purchase orders. No new permissions.
