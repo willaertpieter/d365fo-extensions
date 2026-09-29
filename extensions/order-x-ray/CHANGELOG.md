@@ -1,3 +1,13 @@
+### 0.7.0
+
+A shorter panel, and settings on their own page. No new permissions.
+
+- **Less scrolling.** Charges, Progress, Documents and the customer or vendor fold to a one-line summary, and the panel remembers which ones you opened. The lines now start on the first screen.
+- **Progress** is a compact strip; open it for the full table.
+- **The search** folds to one line once an order is shown; click *Change* to search again.
+- **Lines:** show all, only the ones not complete, or only the ones with an issue. Lines named in an issue are marked, and clicking a line in an issue's evidence jumps to it.
+- **Settings** have their own page (⚙ → *All settings…*), with each check next to its threshold, and a *Check for updates* link. The ⚙ menu keeps *Follow D365* and the charge table-id test.
+
 ### 0.6.3
 
 No new permissions.
