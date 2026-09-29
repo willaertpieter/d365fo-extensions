@@ -1,3 +1,10 @@
+### 0.6.3
+
+No new permissions.
+
+- Charges per a specific unit (for example per m² or per kg) now show that unit, like D365: "0.50 per m²".
+- Such a charge that D365 hasn't calculated yet gets an estimate when its unit is the order line's own unit. Otherwise no estimate is guessed, because it would need D365's unit conversion.
+
 ### 0.6.2
 
 - Check **Not reserved, stock available**: the next step now just says "Reserve the lines".
