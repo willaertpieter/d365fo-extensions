@@ -1,3 +1,7 @@
+### 0.6.2
+
+- Check **Not reserved, stock available**: the next step now just says "Reserve the lines".
+
 ### 0.6.1
 
 No new permissions.
