@@ -1,17 +1,18 @@
 {
-  "name": "Order X-ray",
-  "tagline": "A read-only X-ray of a sales or purchase order: every stage at a glance, and why it is stuck.",
+  "name": "Supply Chain X-ray",
+  "tagline": "A read-only X-ray of a sales, purchase, production or batch order: every stage at a glance, and why it is stuck.",
   "status": "beta",
   "order": 3,
   "highlights": [
     "Read-only",
     "Sales and purchase orders",
+    "Production and batch orders",
     "“Why stuck?” checks",
     "Charges"
   ],
   "permissions": {
-    "sidePanel": "Shows Order X-ray in the browser's side panel, next to D365.",
+    "sidePanel": "Shows Supply Chain X-ray in the browser's side panel, next to D365.",
     "storage": "Your settings only: the thresholds per order type, the Follow D365 switch, and per D365 environment the table ids that charges need. No order data.",
-    "contextMenus": "One Open in Order X-ray item in the browser's right-click menu."
+    "contextMenus": "One Open in Supply Chain X-ray item in the browser's right-click menu."
   }
 }

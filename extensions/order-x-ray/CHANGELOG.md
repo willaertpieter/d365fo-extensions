@@ -1,3 +1,13 @@
+### 0.8.0
+
+Renamed to **Supply Chain X-ray**, and production and batch orders. No new permissions.
+
+- **New name.** Order X-ray is now Supply Chain X-ray. To update, extract the new zip into your existing folder as usual (even if it is still called Order X-ray): your settings stay.
+- **Production X-ray.** A third switch, **Production**, for production and batch orders. The panel also follows *All production orders*, in the list and in the details.
+- It shows the status timeline, materials with reserved, picked and consumed per line, operations, outputs with co- and by-products, cost (estimated vs. realized), unposted journals, picking work, quality orders, and the order against its BOM or formula.
+- **16 new checks** for production, on the settings page with their thresholds: material shortage, not reserved while stock is available, sub-order late, released but not started, picking work open, unposted journals, operation behind, high scrap, consumption off the estimate, reported as finished but not put away, co-product not reported, reported but not ended, cost variance, quality order open, sales order at risk, and BOM or formula changed on the order.
+- **Links between orders:** a sales line produced for it opens its production order, and back.
+
 ### 0.7.0
 
 A shorter panel, and settings on their own page. No new permissions.
