@@ -1,3 +1,17 @@
+### 0.9.0
+
+Transfer and return orders, a batch trace, and more in every X-ray. One permission less: the right-click menu item is gone.
+
+- **Transfer X-ray** (switch **Transfer**, or open a transfer order in D365): the route from shipping through transit to receiving per line, warehouse work and loads, and 12 checks.
+- **Return X-ray** (switch **Return**, or open a return order): the return order by its number or RMA number, lines with their disposition and the sales line they came back from, arrival journals, return work, packing slips, credit notes and the replacement order, and 8 checks.
+- **Batch / serial trace** (switch **Batch**): where a batch came from and where it went, through production, transfers, sales and returns, with stock on hand now and the affected customers as a CSV file. The item can be left empty: it is found from the batch.
+- **In every X-ray:** a Trace card with linked orders (including returns against a sales order, and intercompany orders in another company) and batches, quality orders, and a stock line that names blocked stock.
+- **Blocked and expired stock:** stock in a blocking inventory status, in batches with a blocking disposition code (listed in the settings, per process), or past its expiry date no longer counts as available in the checks. New checks name it.
+- **Search any number:** a number that isn't the selected type is looked up as every other type, as a quality order and as a batch number.
+- **Easier to read:** the order bar shows who and when, "Why stuck?" counts blockers and warnings, durations show in days, and empty sections take one line.
+- **Debug** is hidden by default: turn it on with ⚙ → **Show Debug**.
+- **Removed:** the right-click menu item, which D365's own menu hid almost everywhere. Use **Alt+Shift+L**. The extension no longer asks for the `contextMenus` permission.
+
 ### 0.8.0
 
 Renamed to **Supply Chain X-ray**, and production and batch orders. No new permissions.
