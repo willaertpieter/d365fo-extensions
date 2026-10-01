@@ -1,6 +1,13 @@
 ## What it does
 
-Supply Chain X-ray (formerly Order X-ray) shows the full lifecycle of a sales, purchase, production, batch, transfer or return order in one side panel next to D365, and tells you why it is stuck. It also traces a batch or serial number through the orders it passed.
+Supply Chain X-ray (formerly Order X-ray) shows the full lifecycle of a sales, purchase, production, batch, transfer or return order in one side panel next to D365, and tells you why it is stuck. It also traces a batch or serial number through the orders it passed, and lists the open orders with problems on one page.
+
+**Exception list (all open orders)**
+
+- **Exceptions ↗** in the panel opens a full browser page that runs the checks below on every open sales, purchase, production and transfer order in a time window, and lists the ones with problems, most urgent first.
+- Choose the checks and thresholds, or a preset (blocked, late, stock, warehouse, quality, invoicing, production cost and yield), including production orders over their cost estimate by more than x%.
+- Limit a scan to sites and warehouses; filter and group by responsible person, customer or vendor, check, due date or place.
+- Copy for e-mail, CSV, saved views, "new since the previous scan", and the full X-ray of an order next to the list.
 
 **Sales orders**
 
@@ -69,6 +76,8 @@ Supply Chain X-ray (formerly Order X-ray) shows the full lifecycle of a sales, p
 
 The checks and their thresholds are on the settings page (⚙ → *All settings…*), with the batch disposition codes that block reservation, whether expired batches count as unavailable, and **Show Debug** (off by default) for every request and check result. Charges need a few D365 table ids, which the panel finds and remembers per environment; if D365 doesn't allow that, enter them under settings. IDs are copied with a click, and **Copy summary** on the order header copies a short text summary of the order for an e-mail or chat. You can change the keyboard shortcuts at `edge://extensions/shortcuts`.
 
+**Mode** (⚙ → *Mode*): Light, in D365's colours, Dark, or Follow the browser.
+
 The first query after D365 has been idle can take 20 to 30 seconds while D365 warms up. The panel starts this warm-up as soon as it opens.
 
 ## Supported environments
@@ -79,4 +88,4 @@ Microsoft-hosted F&O environments on `*.operations.dynamics.com` and `*.operatio
 
 - **Read-only.** All network access goes through one function that refuses anything other than a `GET`, and any address other than the D365 page's own `/data/` endpoint.
 - **No data leaves the browser.** Queries run in the D365 page with your own session and security roles. There is no server, no analytics and no remote code.
-- Order data is kept in memory for at most 60 seconds per tab and is never stored.
+- Order data is kept in memory for at most 60 seconds per tab and is never stored. The exception list keeps its results only while its page is open; saved views store filters, not orders.

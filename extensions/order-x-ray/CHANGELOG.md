@@ -1,3 +1,20 @@
+### 0.10.0
+
+An exception list across all open orders, light and dark mode, and a panel that reads well at any width. No new permissions.
+
+- **Exception list** (**Exceptions ↗** in the panel): a full browser page that checks every open sales, purchase, production and transfer order in a time window (default: overdue up to 90 days, due within 14) and lists the ones with problems, most urgent first.
+  - Choose the checks and their thresholds, or start from a preset: blocked, late, stock, warehouse, quality, invoicing, production cost and yield.
+  - Production cost overruns: recently ended orders over the estimate by more than x%.
+  - Limit a scan to sites and warehouses (also when the warehouse is only on the order lines), and filter or group by responsible person, customer or vendor, check, due date or place.
+  - Summary counts, "what goes wrong most", Copy for e-mail and CSV, and the full X-ray of an order next to the list. **Check again** after a fix in D365.
+  - Saved views, "scan when the page opens", and "new since the previous scan".
+  - Fast: orders are checked together, so their queries to D365 combine (live, 1,219 queries instead of 6,029 for 146 production orders).
+  - **Check this list** (turn it on under the list's settings): the scan's filters in words with the order numbers to compare in D365, and a self-check that loads a sample again the full way and compares the results.
+- **Mode:** Light (in D365's colours), Dark, or Follow the browser, in ⚙ → **Mode**, on the settings page and on the exception list.
+- **Easier to read in a wide panel:** a trace shows one batch per row (batch, item, expiry, disposition and quality), document tables line up, and the progress bars and cost table no longer stretch.
+- **Progress** says what its squares show: "8 of 10 stages done · Paid: 0 of 3 lines in full". Hover the strip for every stage.
+- **Smaller fixes:** the scheduled date shows once when start and end are the same, a status isn't repeated, and long evidence lines keep their bullet.
+
 ### 0.9.0
 
 Transfer and return orders, a batch trace, and more in every X-ray. One permission less: the right-click menu item is gone.

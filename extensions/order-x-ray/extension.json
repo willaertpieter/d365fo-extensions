@@ -1,6 +1,6 @@
 {
   "name": "Supply Chain X-ray",
-  "tagline": "A read-only X-ray of a sales, purchase, production, transfer or return order, and a batch trace: every stage at a glance, and why it is stuck.",
+  "tagline": "A read-only X-ray of a sales, purchase, production, transfer or return order, a batch trace, and an exception list across all open orders: every stage at a glance, and why it is stuck.",
   "status": "beta",
   "order": 3,
   "highlights": [
@@ -9,10 +9,12 @@
     "Production, transfer and return orders",
     "Batch / serial trace",
     "“Why stuck?” checks",
-    "Charges"
+    "Exception list",
+    "Charges",
+    "Light and dark mode"
   ],
   "permissions": {
     "sidePanel": "Shows Supply Chain X-ray in the browser's side panel, next to D365.",
-    "storage": "Your settings only: the thresholds per order type, the Follow D365 switch, and per D365 environment the table ids that charges need. No order data."
+    "storage": "Your settings only: the thresholds per order type, the Follow D365 switch, the mode, the exception list's filters and saved views, and per D365 environment the table ids that charges need. No order data."
   }
 }
