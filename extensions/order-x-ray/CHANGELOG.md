@@ -1,3 +1,10 @@
+### 0.10.1
+
+Two fixes. No new permissions.
+
+- **Exception list:** "new since" and "resolved" now compare a scan only with the previous scan of the same order type and company. A purchase scan after a sales scan no longer counts the sales orders as resolved, and a later sales scan is still compared with the earlier one. Only checks that ran in both scans count, and an order counts as having left the window only when the window and filters are the same.
+- **Side panel:** the extension name shows once, in the browser's side-panel bar, no longer also in the panel's own header.
+
 ### 0.10.0
 
 An exception list across all open orders, light and dark mode, and a panel that reads well at any width. No new permissions.
