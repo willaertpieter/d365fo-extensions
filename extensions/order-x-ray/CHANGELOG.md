@@ -1,3 +1,32 @@
+### 0.11.0
+
+Three reports, item availability over time, and Stop that stops at once. No new permissions.
+
+- **Workspace ↗** (formerly Exceptions ↗) opens a full page with four tabs: **Exceptions**, **Stock**, **Customers** and **Vendors**. Each tab has its own address and keeps its result while you look at another.
+- **Stock:** per warehouse, the stock that can't be used:
+  - blocked by an inventory status, and since when;
+  - batches with a blocked disposition code;
+  - expired batches still on hand;
+  - batches expiring soon, with the item's open orders ("no demand");
+  - negative on hand.
+
+  A batch opens its trace.
+- **Customers:** on time in full per customer over a period (default 90 days), from the sales lines' confirmed (else requested) dates and their packing slips. Also the backorders: open lines past their date, with their age and value. A customer opens its late and short lines, and an order opens its X-ray.
+- **Vendors:** the same for purchase lines and product receipts (default 180 days). Also the lead time actually taken against the one the order planned, and the lines never confirmed.
+  - Lines entered after their receipt are left out of the lead time.
+  - Non-stocked lines (services, freight) are left out, unless you tick a box.
+- **On the cards:** the customer card of a sales order and the vendor card of a purchase order show the same figures for that customer or vendor.
+- **Item availability over time** (new switch **Item**, or **Availability ›** in a line's details): per warehouse, the usable stock now and every open receipt and issue by date as a running balance. It shows:
+  - the first day the stock runs short, and the order that causes it;
+  - overdue supply;
+  - planned orders past their order date.
+- **Short now, covered in time:** a sales line or production component that is short today, but covered by an incoming purchase, production or transfer order before it's due, is no longer a shortage. A note names the orders instead. When the supply comes too late, the shortage says from when it is covered.
+- **Production:** "not reserved" follows each material line's Reservation setting. Lines on Manual no longer count as "Material not reserved, stock available".
+- **Stop** on the Workspace stops at once: the queries still waiting in the D365 tab are dropped.
+- **Fixes:**
+  - blocked and expired batches were never taken out of usable stock in the X-rays' stock checks (a query was refused);
+  - the batch trace's numbers no longer overlap in a narrow pane.
+
 ### 0.10.1
 
 Two fixes. No new permissions.

@@ -1,6 +1,6 @@
 {
   "name": "Supply Chain X-ray",
-  "tagline": "A read-only X-ray of a sales, purchase, production, transfer or return order, a batch trace, and an exception list across all open orders: every stage at a glance, and why it is stuck.",
+  "tagline": "A read-only X-ray of a sales, purchase, production, transfer or return order, a batch trace, item availability over time, an exception list and reports: every stage at a glance, and why it is stuck.",
   "status": "beta",
   "order": 3,
   "highlights": [
@@ -10,6 +10,8 @@
     "Batch / serial trace",
     "“Why stuck?” checks",
     "Exception list",
+    "Stock, customer and vendor reports",
+    "Item availability over time",
     "Charges",
     "Light and dark mode"
   ],

@@ -2,12 +2,24 @@
 
 Supply Chain X-ray (formerly Order X-ray) shows the full lifecycle of a sales, purchase, production, batch, transfer or return order in one side panel next to D365, and tells you why it is stuck. It also traces a batch or serial number through the orders it passed, and lists the open orders with problems on one page.
 
+**Item availability over time**
+
+- Switch **Item** (or **Availability ›** in a sales line's or production component's details): per warehouse, usable stock now, then every open receipt and issue by date with the running balance.
+- It shows the first day it runs short and the order that causes it, overdue supply, and planned orders past their order date.
+- Sales lines and production components that are short today but covered in time by incoming supply get a note instead of a shortage.
+
 **Exception list (all open orders)**
 
-- **Exceptions ↗** in the panel opens a full browser page that runs the checks below on every open sales, purchase, production and transfer order in a time window, and lists the ones with problems, most urgent first.
+- **Workspace ↗** in the panel opens a full browser page that runs the checks below on every open sales, purchase, production and transfer order in a time window, and lists the ones with problems, most urgent first.
 - Choose the checks and thresholds, or a preset (blocked, late, stock, warehouse, quality, invoicing, production cost and yield), including production orders over their cost estimate by more than x%.
 - Limit a scan to sites and warehouses; filter and group by responsible person, customer or vendor, check, due date or place.
 - Copy for e-mail, CSV, saved views, "new since the previous scan", and the full X-ray of an order next to the list.
+
+**Reports (Workspace tabs)**
+
+- **Stock:** per warehouse, stock that can't be used: blocked by status (and since when), blocked and expired batches, batches expiring soon with no demand, and negative on hand.
+- **Customers:** on time in full and backorders per customer.
+- **Vendors:** on time, in full, and the lead time actually taken against the one planned, per vendor.
 
 **Sales orders**
 
