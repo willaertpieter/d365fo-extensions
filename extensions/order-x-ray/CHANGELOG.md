@@ -1,3 +1,24 @@
+### 0.11.1
+
+A fifth Workspace tab, and fixes to item availability. No new permissions.
+
+- **Availability** (Workspace tab): for the chosen warehouses, every item that runs short within a horizon (default 30 days), earliest first. Each row shows:
+  - the day it runs short, and the order that causes it;
+  - how much is missing at worst;
+  - the first receipt to expedite;
+  - when it is covered again, or "not in sight";
+  - the sales orders at risk, overdue receipts and late planned orders.
+
+  Tiles filter on short today, not covered in sight, overdue supply and late planned orders. A row opens the item's availability over time beside the list.
+  - **Fast:** only items whose open demand is more than their usable stock are looked at in detail.
+  - **Usable stock:** stock in a blocking inventory status doesn't count as available.
+- **Item view:**
+  - blocked and expired batches no longer count as available;
+  - approved planned orders past their order date are flagged too;
+  - very busy items load in two parts, and the view says when the answer was cut off;
+  - a cut-off planned order list says so.
+- **Panel:** the Item switch no longer drops off a narrow panel.
+
 ### 0.11.0
 
 Three reports, item availability over time, and Stop that stops at once. No new permissions.

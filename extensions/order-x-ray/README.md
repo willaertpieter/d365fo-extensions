@@ -17,6 +17,7 @@ Supply Chain X-ray (formerly Order X-ray) shows the full lifecycle of a sales, p
 
 **Reports (Workspace tabs)**
 
+- **Availability:** every item that runs short within a horizon in the chosen warehouses: the day, the order that causes it, the receipt to expedite, and when it is covered again.
 - **Stock:** per warehouse, stock that can't be used: blocked by status (and since when), blocked and expired batches, batches expiring soon with no demand, and negative on hand.
 - **Customers:** on time in full and backorders per customer.
 - **Vendors:** on time, in full, and the lead time actually taken against the one planned, per vendor.
